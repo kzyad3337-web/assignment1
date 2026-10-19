@@ -4,7 +4,7 @@
 This project is a simple React dashboard that displays a static list of products. Users can show or hide the product list and enter their name to display a greeting.
 
 ## File Organization
-- `src/App.jsx`: The main component. It manages the application state, toggle button, and controlled input.
+- `src/App.jsx`: The main component. It manages application state, the toggle button, and the controlled input.
 - `src/components/Card.jsx`: A reusable layout component that accepts and renders `children`.
 - `src/components/Product.jsx`: Displays a product title and price using props.
 - `src/components/ProductList.jsx`: Defines the static product array and renders products using `map()` with unique keys.
@@ -16,7 +16,7 @@ This project is a simple React dashboard that displays a static list of products
 - Passing data between components using props.
 - Rendering a list with `map()` and unique keys.
 - Using `children` to create a reusable layout component.
-- Setting up Git and GitHub to submit the project.
+- Setting up Git and GitHub for submission.
 
 ## How to Run
 1. Install Node.js.
