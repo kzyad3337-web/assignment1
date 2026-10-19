@@ -1,13 +1,7 @@
 
 function Card({ children }) {
   return (
-    <div
-      style={{
-        border: "1px solid gray",
-        padding: "16px",
-        margin: "10px",
-      }}
-    >
+    <div className="product-card">
       {children}
     </div>
   );
