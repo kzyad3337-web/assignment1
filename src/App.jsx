@@ -7,6 +7,8 @@ function App() {
   const [showProducts, setShowProducts] = useState(true);
   const [name, setName] = useState("");
 
+  const trimmedName = name.trim();
+
   return (
     <div className="dashboard">
       <h1>React Product Dashboard</h1>
@@ -22,9 +24,18 @@ function App() {
         type="text"
         value={name}
         onChange={(event) => setName(event.target.value)}
+        placeholder="Type your name"
       />
 
-      <p>Hello, {name}</p>
+      <p>
+        {trimmedName ? `Hello, ${trimmedName}!` : "Welcome to the Product Dashboard!"}
+      </p>
+
+      {trimmedName && (
+        <button onClick={() => setName("")}>
+          Clear Name
+        </button>
+      )}
 
       {showProducts && <ProductList />}
     </div>
